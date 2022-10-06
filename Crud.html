@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -11,7 +13,7 @@
      <div class="container">
         <div class="header">
          <span>Cadastro de Aparelhos</span>
-         <button onclick="abreM()" id="novo">Novo item</button>
+         <button onclick="abreM()" id="new">Novo item</i></button>
         </div>
       <div class="divTabela">
         <table>
@@ -27,6 +29,8 @@
                     <th class="acao">Excluir</th>
                 </tr>
             </thead>
+            <tbody>
+            </tbody>
         </table>
       </div>
 
@@ -39,7 +43,7 @@
              <input id="m-modelo" type="text" required />
 
 
-             <label for="m-mcarca">Marca</label>
+             <label for="m-marca">Marca</label>
              <input id="m-marca" type="text" required />
 
              <br>
