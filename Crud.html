@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+         <span>Cadastro de Aparelhos</span>
+         <button onclick="abreM()" id="novo">Novo item</button>
+        </div>
+      <div class="divTabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Tipo</th>
+                    <th>Quantidade</th>
+                    <th>Condição</th>
+                    <th>Diferenciais</th>
+                    <th class="acao">Editar</th>
+                    <th class="acao">Excluir</th>
+                </tr>
+            </thead>
+        </table>
+      </div>
+
+
+
+      <div class="M-container">
+        <div class="m">
+           <form>
+             <label for="m-modelo">Modelo</label>
+             <input id="m-modelo" type="text" required />
+
+
+             <label for="m-mcarca">Marca</label>
+             <input id="m-marca" type="text" required />
+
+             <br>
+             <label for="m-tipo">Tipo</label>
+             <select id="combobox" >
+                <option value="id">--Tipo--</option>
+                 <option value="id1">Mercadoria para revenda</option>
+                 <option value="id2">Matéria-prima</option>
+                 <option value="id3">Produto em processo</option>
+                 <option value="id4">Produto acabado</option>
+                 <option value="id5">Subproduto</option>
+                 <option value="id6">Produto intermediário</option>
+                 </select> <br>
+             <label for="m-quantidade">Quantidade</label>
+             <input id="m-quantidade" type="number" required />
+               <br>
+             <label for="m-condicao">Condição:
+             <br><input type="radio" name="tipo" value="novo"  required> Novo</label>
+             <br><input type="radio" name="tipo" value="usado"  required> Usado</label><br>
+ 
+             <label for="m-diferencial">Diferenciais:
+                <br><input type="checkbox" name="op1">
+                Full hd</input><br/>
+                <input type="checkbox" name="op2">
+                5G</input><br/>
+                <input type="checkbox" name="op3">
+                Dual chip</input><br/>   
+             </label><br>
+             <button id="btnsalvar">Cadastrar</button>
+
+           </form> 
+        </div>
+      </div>
+     </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
